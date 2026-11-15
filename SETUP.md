@@ -1,15 +1,15 @@
 # Portfolio setup
 
-This is a responsive portfolio that reads public GitHub repositories at page load. It uses plain HTML, CSS, and JavaScript and needs no build step.
+A single-page portfolio in plain HTML, CSS and JavaScript. It needs no build step.
 
 ## Personalize it
 
-Edit `site-config.js` to update your name, specialty, location, email, LinkedIn URL, and featured projects. Add repository names to `featuredRepos` to place them first; leave the array empty to show recent projects. Update the profile README at the repository root with any additional bio details.
+- **Contact links:** edit `site-config.js` and set `email` and `linkedinUrl`. Empty values keep those links hidden.
+- **Content:** projects, research, experience and skills are written directly in `index.html`, so you choose exactly what appears and in what order.
+- **Colors and type:** the palette and fonts are CSS variables at the top of `styles.css` (`--accent` is the green used for highlights and the contact band).
 
 ## Publish
 
-This repository is named after your GitHub username, so enabling GitHub Pages from **Settings → Pages → Deploy from a branch → main / (root)** will publish the site at `https://singhshubham4422.github.io/`.
+This repository is named after your GitHub username, so enabling GitHub Pages from **Settings → Pages → Deploy from a branch → main / (root)** publishes the site at `https://singhshubham4422.github.io/`.
 
-The portfolio refreshes from GitHub’s public API on each visit and shows up to six recently updated, non-fork public repositories. API availability and rate limits can temporarily affect that list.
-
-The repository name matches your username, and its root `README.md` is the profile README GitHub displays on your profile.
+The root `README.md` is the profile README GitHub displays on your profile.

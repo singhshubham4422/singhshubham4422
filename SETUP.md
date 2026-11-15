@@ -10,6 +10,6 @@ A single-page portfolio in plain HTML, CSS and JavaScript. It needs no build ste
 
 ## Publish
 
-This repository is named after your GitHub username, so enabling GitHub Pages from **Settings → Pages → Deploy from a branch → main / (root)** publishes the site at `https://singhshubham4422.github.io/`.
+The live site at `https://singhshubham4422.github.io/` is served from a separate repository, [`singhshubham4422.github.io`](https://github.com/singhshubham4422/singhshubham4422.github.io). GitHub only serves that root address from a repository with exactly that name. After changing the site here, copy `index.html`, `styles.css`, `main.js`, `site-config.js` and `favicon.svg` into that repository and push it.
 
-The root `README.md` is the profile README GitHub displays on your profile.
+This repository is named after your GitHub username, so its root `README.md` is the profile README GitHub displays on your profile. GitHub Pages is also turned on here, which publishes a second copy of the site at `https://singhshubham4422.github.io/singhshubham4422/`.

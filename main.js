@@ -24,6 +24,19 @@
     linkedinLink.hidden = false;
   }
 
+  const phoneLink = document.querySelector("[data-phone-link]");
+  if (phoneLink && isSet(config.phone)) {
+    phoneLink.href = `tel:${config.phone.replace(/[^\d+]/g, "")}`;
+    phoneLink.textContent = config.phone.trim();
+    phoneLink.hidden = false;
+  }
+
+  const location = document.querySelector("[data-location]");
+  if (location && isSet(config.location)) {
+    location.textContent = `Based in ${config.location.trim()}`;
+    location.hidden = false;
+  }
+
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 })();
